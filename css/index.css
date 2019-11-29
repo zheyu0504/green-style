@@ -59,9 +59,28 @@ a,a:hover{
 	position: relative;
 }
 
-.show img{
-	width: 100%;
-	height: 100vh;
+.show{
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  background-image: url(../img/slide/0.jpg);
+  animation: slide calc(3s*4) infinite;
+}
+
+@keyframes slide {
+  25%{
+    background-image: url(../img/slide/0.jpg);
+  }
+  
+  50%{
+    background-image: url(../img/slide/1.jpg);
+  }
+  
+  75%{
+    background-image: url(../img/slide/2.jpg);
+  }
 }
 
 .turn img{
@@ -492,7 +511,7 @@ a,a:hover{
 	background-size: cover;
 }
 
-.input-c{
+#form input,select{
 	width:100%;
 	padding: 5px;
 	font-size: 16px;
@@ -669,8 +688,8 @@ footer p{
 }
 
 .login2{
-	width: 35%;
-	height: 60%;
+	width: 500px;
+	height: 475px;
 	position: fixed;
 	z-index: 20;
 	background: #Fff;
@@ -768,19 +787,19 @@ footer p{
 	}
 }
 
-.alert-box {
+.alert-box{
         position: fixed;
         top: calc(50vh - 50px);
         left: calc(50vw - 50px);
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 100px;
+        width: 120px;
         height: 100px;
         border-radius: 5px;
         color: #fff;
         background: rgba(0, 0, 0, 0.6);
-		animation: do-alert 1s;
+		animation: do-alert 2s;
         visibility: hidden;
         opacity: 0;
     }
@@ -830,6 +849,17 @@ footer p{
 	.nav-b:after{
 		text-align: left;
 		padding: 10px 35px;
+	}
+	.login2{
+		width: 300px;
+		height: 375px;
+	}
+	.p1 .p2{
+		font-size: 14px;
+	}
+	.login{
+		width: 90%;
+		height: 70%;
 	}
 }
 

@@ -1,18 +1,3 @@
-time=0
-setInterval(auto,4500)
-
-function auto(){
-	time++
-	if(time>2){
-		time=0
-	}
-	$(".turn img").fadeIn(400)
-	$(".show img").fadeOut(400, function(){
-		$(".show img").attr("src","img/slide/"+time+".jpg")
-		$(".show img").fadeIn()
-	})
-}
-
 $(".category-item").hover(function(){
 	$(".category-item").removeClass("current")
 	$(this).addClass("current")
@@ -47,8 +32,12 @@ $(".btn-s").click(function(){
 	shop++
 	$(".cart .nav-b span").text("購物車("+shop+")")
 	$(".cart-i p").text(""+shop+"")
+	var message = "成功加入購物車";
+	if ($(this).hasClass("h-ani")) message = "成功加入購物車";
+    $("body").append("<div class='alert-box'>" + message + "</div>");
 	var divClass = $(this).attr("data-for")
 	$("." + divClass).toggleClass("add-ani")
+	
 })
 
 $("#item1").click(function(){
@@ -152,6 +141,7 @@ $(".btn-l2").click(function(){
 	if(!$("#number").val()){
 		return alert("您尚未填寫身分證字號");
 	}
+	$(".login2 inpur").val("")
 	alert("資料已送出")
 	$(".login2").fadeOut()
 })
