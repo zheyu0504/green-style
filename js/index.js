@@ -1,13 +1,13 @@
 time=0
-setInterval(auto,4000)
+setInterval(auto,4500)
 
 function auto(){
 	time++
 	if(time>2){
 		time=0
 	}
+	$(".turn img").fadeIn(400)
 	$(".show img").fadeOut(400, function(){
-		$(".turn img").fadeOut()
 		$(".show img").attr("src","img/slide/"+time+".jpg")
 		$(".show img").fadeIn()
 	})
@@ -35,8 +35,11 @@ $(".infor-icon img").click(function(){
 })
 
 $(".heart").click(function(){
-	$(this).toggleClass("h-ani")
-})
+	$(this).toggleClass("h-ani");
+	var message = "取消追蹤";
+	if ($(this).hasClass("h-ani")) message = "追蹤成功";
+    $("body").append("<div class='alert-box'>" + message + "</div>");
+});
 
 shop=0
 
@@ -159,7 +162,10 @@ $('#form').submit(function () {
   	return false;
 });
 
-$('.btn-f').click(function () {
+$('#form2').submit(function () {
 	alert("感謝您的訂閱")
   	return false;
 });
+
+
+
