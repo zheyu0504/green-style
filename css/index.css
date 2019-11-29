@@ -41,7 +41,7 @@ a,a:hover{
 	text-align: center;
 	transform: translateY(100%);
 	opacity: 0;
-	transition: 1s ease-in-out;
+	transition: 0.5s ease-in-out;
 }
 .nav-b:hover:after{
 	transform: translateY(0);
@@ -113,11 +113,11 @@ a,a:hover{
 }
 
 .title h2{
-	font-weight: 800;
 	letter-spacing: 10px;
 	z-index: 3;
 	position: relative;
-	color: #Fff;
+	color: #fff;
+	font-weight: 800;
 }
 
 .title span{
@@ -130,9 +130,9 @@ a,a:hover{
 	top: -10%;
 	left: 50%;
 	transform: translateX(-53%);
-	background: #6e7d5d;
-	width: 13%;
-	height: 75%;
+	background: #7dbca9;
+	width: 200px;
+	height: 50px;
 	z-index: 2;
 }
 
@@ -157,7 +157,7 @@ a,a:hover{
 	height: 100%;
 	top: 0;
 	left: 0;
-	background: #9c744a;
+	background: #cbbca5;
 	content: "";
 	transition: 0.5s ease-in-out transform;
 	transform: scaleY(0);
@@ -347,7 +347,7 @@ a,a:hover{
 
 .btn-s{
 	width: 100%;
-	background: #b89869;
+	background: #ff9b6d;
 	text-align: center;
 	border-radius: 5px;
 	border: 1px solid white;
@@ -469,7 +469,7 @@ a,a:hover{
 
 .btn-e{
 	width: 100%;
-	background: #f27064;
+	background: #ff9b6d;
 	text-align: center;
 	border-radius: 5px;
 	border: 1px solid white;
@@ -506,7 +506,7 @@ a,a:hover{
 
 .btn-c{
 	width: 20%;
-	background: #8f7144;
+	background: #ff9b6d;
 	text-align: center;
 	border-radius: 7px;
 	position: relative;
@@ -563,7 +563,7 @@ a,a:hover{
 
 .btn-f{
 	width: 100%;
-	background: #f27064;
+	background: #ff9b6d;
 	text-align: center;
 	border-radius: 5px;
 	border: 1px solid white;
@@ -768,6 +768,34 @@ footer p{
 	}
 }
 
+.alert-box {
+        position: fixed;
+        top: calc(50vh - 50px);
+        left: calc(50vw - 50px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100px;
+        height: 100px;
+        border-radius: 5px;
+        color: #fff;
+        background: rgba(0, 0, 0, 0.6);
+		animation: do-alert 1s;
+        visibility: hidden;
+        opacity: 0;
+    }
+
+	@keyframes do-alert {
+        0%, 100% {
+                        visibility: visible;
+                }
+		50% {
+			opacity: 1;
+            visibility: visible;
+        }
+	}
+
+
 @media screen and (max-width:600px){
 	.rwd{
 		display: none;
@@ -777,9 +805,6 @@ footer p{
 	}
 	.show img{
 		height: 100%;
-	}
-	.shape{
-		width: 40%;
 	}
 	#mean,.shop,#event,#contact,#footer{
 		height: 100%;
