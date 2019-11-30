@@ -59,7 +59,7 @@ a,a:hover{
 	position: relative;
 }
 
-.show{
+#show{
   width: 100vw;
   height: 100vh;
   background-repeat: no-repeat;
@@ -135,7 +135,7 @@ a,a:hover{
 	letter-spacing: 10px;
 	z-index: 3;
 	position: relative;
-	color: #fff;
+	color: #494845;
 	font-weight: 800;
 }
 
@@ -149,7 +149,7 @@ a,a:hover{
 	top: -10%;
 	left: 50%;
 	transform: translateX(-53%);
-	background: #7dbca9;
+	background: #c1ef99;
 	width: 200px;
 	height: 50px;
 	z-index: 2;
@@ -176,7 +176,7 @@ a,a:hover{
 	height: 100%;
 	top: 0;
 	left: 0;
-	background: #cbbca5;
+	background: #a5a5a5;
 	content: "";
 	transition: 0.5s ease-in-out transform;
 	transform: scaleY(0);
@@ -260,7 +260,7 @@ a,a:hover{
 	width: 100%;
 	color: #Fff;
 	background: #000;
-	border-bottom: 2px orange solid;
+	border-bottom: 2px green solid;
 	text-align: center;
 	font-size: 22px;
 }
@@ -366,12 +366,12 @@ a,a:hover{
 
 .btn-s{
 	width: 100%;
-	background: #ff9b6d;
+	background: #f49589;
 	text-align: center;
 	border-radius: 5px;
 	border: 1px solid white;
 	padding: 5px;
-	color: #Fff;
+	color: #494845;
 	cursor: pointer;
 	transition: 0.5s;
 }
@@ -488,12 +488,12 @@ a,a:hover{
 
 .btn-e{
 	width: 100%;
-	background: #ff9b6d;
+	background: #f49589;
 	text-align: center;
 	border-radius: 5px;
 	border: 1px solid white;
 	padding: 5px;
-	color: #Fff;
+	color: #494845;
 	cursor: pointer;
 	transition: 0.5s;
 }
@@ -525,11 +525,11 @@ a,a:hover{
 
 .btn-c{
 	width: 20%;
-	background: #ff9b6d;
+	background: #f49589;
 	text-align: center;
 	border-radius: 7px;
 	position: relative;
-	color: #fff;
+	color: #494845;
 	padding: 5px;
 	left: 50%;
 	border: none;
@@ -582,12 +582,12 @@ a,a:hover{
 
 .btn-f{
 	width: 100%;
-	background: #ff9b6d;
+	background: #f49589;
 	text-align: center;
 	border-radius: 5px;
 	border: 1px solid white;
 	padding: 5px;
-	color: #Fff;
+	color: #494845;
 	cursor: pointer;
 	transition: 0.5s;
 	margin-top: 20px;
@@ -842,6 +842,7 @@ footer p{
 	}
 	.btn-c{
 		margin-bottom: 20px;
+		width: 30%;
 	}
 	nav img{
 		width: 100px;
@@ -860,6 +861,31 @@ footer p{
 	.login{
 		width: 90%;
 		height: 70%;
+	}
+	.login2{
+		padding: 10px;
+	}
+	.login2 input{
+		font-size: 12px;
+	}
+	.turn img{
+		width: 100%;
+		left: 0%;
+	}
+	.box,.box-s{
+		width: 300px;
+		height: 375px;
+		margin: 0 auto;
+	}
+	.box{
+		padding: 70px 40px;
+	}
+	.box h2{
+		font-size: 3em;
+	}
+	.btn-s{
+		width: 300px;
+		margin: 0 auto;
 	}
 }
 

@@ -80,40 +80,42 @@ $("#item4").click(function(){
 	$(".addcart").removeClass("add-ani")
 })
 
-$("#login1 .btn-l").click(function(){
+$("#login .btn-l").click(function(){
 	alert("目前沒有網路無法登入")
-	$("#login1").fadeOut()
+	$(".login input").val("")
+	$("#login").fadeOut()
 })
 
-$("#login2 .btn-l").click(function(){
+$("#register .btn-l").click(function(){
 	alert("目前沒有網路無法註冊")
-	$("#login2").fadeOut()
+	$(".login input").val("")
+	$("#register").fadeOut()
 })
 
-$("#login2 img").click(function(){
-	$("#login2").fadeOut()
+$("#register img").click(function(){
+	$("#register").fadeOut()
 })
 
 $(".cart").click(function(){
-	$("#login1").fadeIn()
+	$("#login").fadeIn()
 })
 
 $(".cart-i").click(function(){
-	$("#login1").fadeIn()
+	$("#login").fadeIn()
 })
 
-$("#login").click(function(){
-	$("#login1").fadeIn()
+$("#nav-login").click(function(){
+	$("#login").fadeIn()
 })
 
 $(".p1").click(function(){
-	$("#login1").fadeOut()
-	$("#login2").fadeIn()
+	$("#login").fadeOut()
+	$("#register").fadeIn()
 })
 
 $(".p2").click(function(){
 	alert("目前沒有網路請稍後在試")
-	$("#login1").fadeOut()
+	$("#login").fadeOut()
 })
 
 $(".btn-e").click(function(){
@@ -121,7 +123,7 @@ $(".btn-e").click(function(){
 })
 
 $(".login img").click(function(){
-	$("#login1").fadeOut()
+	$("#login").fadeOut()
 })
 
 $(".login2 img").click(function(){
@@ -141,19 +143,20 @@ $(".btn-l2").click(function(){
 	if(!$("#number").val()){
 		return alert("您尚未填寫身分證字號");
 	}
-	$(".login2 inpur").val("")
+	$(".login2 input").val("")
 	alert("資料已送出")
 	$(".login2").fadeOut()
 })
 
-$('#form').submit(function () {
+$('#form').submit(function(){
 	alert("資料已送出，謝謝您的回覆。")
-	$('.input-c').val("");
+	$('#form input').val("");
   	return false;
 });
 
-$('#form2').submit(function () {
+$('#form2').submit(function(){
 	alert("感謝您的訂閱")
+	$('#form2 input').val("");
   	return false;
 });
 

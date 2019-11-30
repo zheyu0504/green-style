@@ -26,10 +26,10 @@
 		  <p>0</p>
 	  </div>
 	  
-	  <form class="login" style="display: none;" id="login1">
+	  <form class="login" style="display: none;" id="login">
 		  <div class="top" style="height: 25px;"></div>
 		  	<div class="title">
-				<div class="shape" style="width: 60%;"></div>
+				<div class="shape"></div>
 				<h2>登入</h2>
 				<span>LOGIN</span>
 			</div>
@@ -45,10 +45,10 @@
 		  
 	  </form>
 	  
-	  <form class="login" style="display: none;" id="login2">
+	  <form class="login" style="display: none;" id="register">
 		  <div class="top" style="height: 25px;"></div>
 		  	<div class="title">
-				<div class="shape" style="width: 60%;"></div>
+				<div class="shape"></div>
 				<h2>註冊</h2>
 				<span>REGISTER</span>
 			</div>
@@ -63,7 +63,7 @@
 	  <form class="login2" style="display: none;">
 		  <div class="top" style="height: 50px;"></div>
 		  	<div class="title">
-				<div class="shape" style="width: 50%;"></div>
+				<div class="shape"></div>
 				<h2>活動報名</h2>
 				<span>LOGIN</span>
 			</div>
@@ -100,14 +100,14 @@
 			 <li class="nav-item"> <a class="nav-link" href="#category"><div class="nav-b" data-text="Category"><span>商品分類</span></div></a> </li>
 			 <li class="nav-item"> <a class="nav-link" href="#event"><div class="nav-b" data-text="Event"><span>精彩活動</span></div></a> </li>
 			 <li class="nav-item"> <a class="nav-link" href="#contact"><div class="nav-b" data-text="Contact us"><span>聯絡我們</span></div></a> </li>
-			 <li class="nav-item"> <a class="nav-link" id="login"><div class="nav-b" data-text="Login"><span>會員登入</span></div></a> </li>
+			 <li class="nav-item"> <a class="nav-link" id="nav-login"><div class="nav-b" data-text="Login"><span>會員登入</span></div></a> </li>
 			 <li class="nav-item"> <a class="nav-link cart"><div class="nav-b" data-text="Cart"><span>購物車(0)</span></div></a> </li>
         </ul>
       </div>
     </nav>
 	  
 	  <section class="slide">
-	  	<div class="show"></div>
+	  	<div id="show"></div>
 		  <a href="#mean">
 		  <div class="turn">
 		  	<img src="img/turn/1.png" alt="">
@@ -625,26 +625,26 @@
 			  	<div class="col-md-6 col-sm-12">
 					<div class="col-12">
 						<h2>姓名</h2>
-						<input type="text" placeholder="請填入姓名" class="input-c" required> 
+						<input type="text" placeholder="請填入姓名" required> 
 					</div>
 					<div class="col-12">
 						<h2>電話</h2>
-						<input type="tel" placeholder="請填入電話" class="input-c" required pattern="[0-9-()]+"> 
+						<input type="tel" placeholder="請填入電話" required pattern="[0-9-()]+"> 
 					</div>
 					<div class="col-12">
 						<h2>電子郵件</h2>
-						<input type="email" placeholder="請填入電子郵件" class="input-c" required> 
+						<input type="email" placeholder="請填入電子郵件" required> 
 					</div>
 					<div class="col-12">
 						<h2>想說的話</h2>
-						<input type="text" placeholder="請填入想說的話" class="input-c" required> 
+						<input type="text" placeholder="請填入想說的話" required> 
 					</div>
 				</div>
 				<div class="col-md-6 col-sm-12">
 					<div class="col-12">
 						<h2>有獎徵答<br>將在12/31中午12點在FB粉絲團直播抽出1位幸運兒<br>獎品為日本來回機票一張</h2>
 						<h2>我們的網頁名稱是什麼</h2>
-						<select class="input-c">
+						<select>
 							<option>台灣產業新勢力</option>
 							<option>日本產業新勢力</option>
 							<option>香港產業新勢力</option>
@@ -652,7 +652,7 @@
 					</div>
 					<div class="col-12">
 						<h2>我們的目標是是什麼</h2>
-						<select class="input-c">
+						<select>
 							<option>推廣台灣美食</option>
 							<option>推廣台灣在地產業</option>
 							<option>推廣台灣觀光</option>
@@ -660,7 +660,7 @@
 					</div>
 					<div class="col-12">
 						<h2>我們在哪一年創辦此網頁</h2>
-						<select class="input-c">
+						<select>
 							<option>2011</option>
 							<option>2016</option>
 							<option>2002</option>
